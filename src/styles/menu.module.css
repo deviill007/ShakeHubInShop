@@ -1,0 +1,227 @@
+.menuContainer {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+/* Search Bar */
+.searchBar {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Category Section */
+.categorySection {
+    margin-bottom: 20px;
+}
+
+/* Category Header */
+.categoryHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.categoryHeader h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Category Items */
+.categoryItems {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Menu Item */
+.menuItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    height: 120px;
+    width: 100%;
+    border-radius: 8px;
+    color: #333;
+    
+}
+
+.menuItem img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.menuItemDetails {
+    flex: 1;
+}
+
+.menuItemDetails h3 {
+    font-size: 16px;
+    margin: 0px 15px;
+    font-weight:normal;
+}
+
+.menuItemDetails p {
+    font-size: 14px;
+    margin: 5px 20px;
+    color: gray;
+}
+
+/* Add to Cart Button */
+.addToCart {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.addToCart:hover {
+    background-color: #6f7df8;
+}
+
+/* Quantity Controls */
+.quantityControls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.quantityControls span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 60px;
+    /* background-color: #555; */
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.quantityControls button {
+    background-color: #6f7df8;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 30px;
+    padding: 5px 10px; 
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* Horizontal Line */
+.category hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 15px 0;
+}
+.cartButton {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    margin: 0;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: #333;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s;
+    z-index: 1000;
+}
+.cartButton:hover{
+    background-color: #6f7df8;
+    color: white;
+}
+.cartDrawer {
+    position: fixed;
+    right: 0;
+    bottom: 0px;
+    width: 300px; /* Adjust width */
+    height: 100vh;
+    background: white;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: block; /* Ensure visibility */
+    z-index: 1000;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+  .cartDrawer h2{
+    margin-top: 100px;
+  }
+.checkoutButton, .xbutton {
+    background-color: #6f7df8;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}  
+.checkoutButton:hover, .xbutton:hover{
+    transform: scale(1.1);
+    background-color: #4b55b1;
+}
+.cartItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cartItem div{
+    display: flex;
+    align-items: center;
+}
+.dropdownButton{
+    background-color: #6f7df8;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 40px;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cartQuantityControls {
+    background-color: #6f7df8;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 30px;
+    padding: 5px 10px; 
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cartQuantityControls:hover{
+    background-color: #4b55b1;
+}
+.dropdownButton:hover{
+    transform: scale(1.1);
+    background-color: #4b55b1;
+}
